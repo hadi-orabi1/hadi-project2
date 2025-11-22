@@ -1,0 +1,111 @@
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;        /* allow wrapping instead of one long line */
+  justify-content: center; /* center cards nicely */
+  gap: 16px;              /* spacing between cards */
+  max-width: 1200px;      /* prevent site from being too wide */
+  margin: 0 auto;         /* center container */
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #a5d6a7;
+  border-radius: 12px;
+  padding: 16px;          /* slightly smaller padding */
+  text-align: center;
+  width: 220px;           /* smaller card width */
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  font-family: 'Segoe UI', sans-serif;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column; /* stack content vertically */
+  justify-content: space-between; /* push button to bottom */
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card-img-wrapper {
+  position: relative;
+}
+
+.card-img {
+  width: 100%;
+  height: 140px;          /* smaller image */
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.heart-icon {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  font-size: 20px;
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.3s;
+  user-select: none;
+}
+
+.heart-icon:hover {
+  color: #ff6b6b;
+}
+
+.heart-icon.liked {
+  color: #e63946;
+}
+
+.card-title {
+  font-size: 1rem;        /* smaller title */
+  color: #2e7d32;
+  margin-bottom: 6px;
+  white-space: nowrap;    /* keep in one line */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-author {
+  font-size: 0.85rem;
+  color: #4e4e4e;
+  margin-bottom: 4px;
+}
+
+.card-price {
+  font-size: 0.95rem;
+  color: #2e7d32;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.card-rating {
+  font-size: 13px;
+  color: #f5a623; /* gold stars */
+  margin: 4px 0;
+}
+
+.card-rating .rating-value {
+  color: #555;
+  font-size: 11px;
+  margin-left: 6px;
+}
+
+.buy-btn {
+  margin-top: auto;       /* push button to bottom */
+  align-self: center;     /* center horizontally */
+  padding: 6px 12px;      /* smaller button */
+  background-color: #2e7d32; /* unified green theme */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.buy-btn:hover {
+  background-color: #388e3c;
+}

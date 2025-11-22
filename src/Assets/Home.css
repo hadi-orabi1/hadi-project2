@@ -1,0 +1,245 @@
+.home-container {
+  min-height: 100vh;
+  padding: 60px 40px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #e9f5ec, #fdfdfd); /* 🔹 bigger background gradient */
+}
+
+/* Title and Subtitle */
+.home-title {
+  font-size: 2.6rem;
+  color: #1b4332;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.home-subtitle {
+  font-size: 1.3rem;
+  color: #4e4e4e;
+  margin-bottom: 40px;
+}
+
+/* Category Dropdown */
+.category-dropdown {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+.dropdown-btn {
+  background-color: #1b4332;
+  color: #fff;
+  padding: 14px 28px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.dropdown-btn:hover {
+  background-color: #2d6a4f;
+  transform: scale(1.05);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 260px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  z-index: 1;
+  top: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dropdown-content button {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  padding: 12px 16px;
+  font-size: 1rem;
+  color: #1b4332;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dropdown-content button:hover {
+  background-color: #e9f5ec;
+}
+
+.category-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Popular Books Section */
+.popular-books-header {
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #1b4332;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.section-divider {
+  width: 100px;
+  height: 3px;
+  background-color: #1b4332;
+  border: none;
+  margin: 0 auto;
+}
+
+/* Book Grid */
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  margin-top: 25px;
+}
+
+.book-card {
+  background-color: #ffffff;
+  border: 1px solid #d8f3dc;
+  border-radius: 10px;
+  padding: 16px;
+  width: 100%;
+  max-width: 220px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.book-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.book-image {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.book-info {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.book-title {
+  font-size: 17px;
+  font-weight: 600;
+  color: #1b4332;
+}
+
+.book-author {
+  font-size: 14px;
+  color: #40916c;
+}
+
+.book-price {
+  font-size: 16px;
+  color: #52b788;
+  font-weight: bold;
+}
+
+/* About Section */
+.about-joud {
+  margin-top: 60px;
+  padding: 25px;
+  background-color: #e9f5ec;
+  border-radius: 12px;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.about-title {
+  font-size: 1.6rem;
+  color: #1b4332;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.about-text {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* Quiz Section */
+.quiz-section {
+  margin-top: 50px;
+  padding: 25px;
+  background-color: #fffbe6;
+  border-radius: 12px;
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.quiz-title {
+  font-size: 1.6rem;
+  color: #1b4332;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.quiz-question {
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.quiz-text {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.quiz-option {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  color: #1b4332;
+}
+
+.quiz-submit {
+  background-color: #1b4332;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.quiz-submit:hover {
+  background-color: #2d6a4f;
+  transform: scale(1.05);
+}
+
+.quiz-feedback {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #4e4e4e;
+}
+
+/* Carousel */
+.carousel-img {
+  height: 420px;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  margin-bottom: 50px;
+}

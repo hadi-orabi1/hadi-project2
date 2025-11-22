@@ -1,0 +1,47 @@
+.footer {
+  background-color: #1b4332;
+  color: white;
+  text-align: center;
+  padding: 24px;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffd60a;
+}
+
+.qr-section p {
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+}
+
+.footer-bottom a {
+  color: #ffffff;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.green-title {
+  color: #ffd60a;
+  font-weight: bold;
+}
+

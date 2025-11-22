@@ -1,0 +1,21 @@
+.navbar {
+  background: linear-gradient(135deg, #00796b, #004d40) !important;
+}
+.navbar-brand {
+  font-weight: bold;
+  color: #fefae0 !important;
+}
+.nav-link {
+  color: #fefae0 !important;
+}
+.nav-link:hover {
+  color: #ffd60a !important;
+}
+.brand-unique {
+  font-size: 2rem;          /* bigger than nav links */
+  font-weight: 900;         /* extra bold */
+  letter-spacing: 1px;      /* spaced out letters */
+  color: #ffd60a !important; /* standout color (gold/yellow) */
+  text-transform: uppercase; /* optional: all caps */
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.4); /* subtle shadow */
+}
