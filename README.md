@@ -32,3 +32,7 @@ The website includes the following pages:
 ```bash
 git clone https://github.com/hadi-orabi1/hadi-project2.git
 cd hadi-project2
+<img width="1885" height="879" alt="Screenshot 2025-12-28 205831" src="https://github.com/user-attachments/assets/9be9f2b8-77e7-409e-81a0-7a95477deeaf" />
+<img width="1881" height="861" alt="Screenshot 2025-12-28 205743" src="https://github.com/user-attachments/assets/f5930d16-5c32-40c0-88b0-8a729cbe1910" />
+![Uploading localhost_3000_(iPhone 14 Pro Max) (3).png…]()
+
