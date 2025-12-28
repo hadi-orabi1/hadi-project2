@@ -30,5 +30,5 @@ The website includes the following pages:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/hadi-orabi1/hadi-projectt1.git
-cd hadi-projectt1
+git clone https://github.com/hadi-orabi1/hadi-project2.git
+cd hadi-project2
