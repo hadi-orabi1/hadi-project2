@@ -1,5 +1,9 @@
+import React from "react";
 import { FaInstagram, FaFacebook, FaTwitter } from "react-icons/fa";
 
+/**
+ * SocialIcons Component: Reusable set of social media links.
+ */
 export default function SocialIcons() {
   return (
     <div className="social-icons">

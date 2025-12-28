@@ -1,3 +1,4 @@
+
 export default function Contact() {
   return (
     <div style={{ padding: "30px", maxWidth: "600px", margin: "auto" }}>

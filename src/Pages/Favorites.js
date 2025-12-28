@@ -1,25 +1,28 @@
+// useContext: Hook to access global Favorites state.
 import React, { useContext } from "react";
 import { FavoritesContext } from "../context/FavoritesContext";
+import BookCard from "../Components/BookCard";
 
-function Favorites() {
+
+export default function Favorites() {
+  // Access favorite books from context.
   const { favoriteBooks } = useContext(FavoritesContext);
 
   return (
-    <div className="container py-4">
-      <h2 className="text-center mb-4">❤️ Your Favorite Books</h2>
+    <div style={{ padding: "30px" }}>
+      <h2 style={{ color: "#d32f2f", textAlign: "center" }}>❤️ Your Favorites</h2>
+
       {favoriteBooks.length === 0 ? (
-        <p className="text-center">You haven't liked any books yet.</p>
+        // Empty State: Encourages user to add favorites.
+        <p style={{ textAlign: "center", marginTop: "50px", fontSize: "1.2rem" }}>
+          You haven't added any favorites yet.
+        </p>
       ) : (
-        <div className="row">
-          {favoriteBooks.map(book => (
-            <div key={book.id} className="col-md-4 mb-3">
-              <div className="card h-100">
-                <img src={book.image} alt={book.title} className="card-img-top" />
-                <div className="card-body">
-                  <h5 className="card-title">{book.title}</h5>
-                  <p className="card-text">${book.price}</p>
-                </div>
-              </div>
+        // Favorites Grid: Reuses BookCard for consistency.
+        <div className="row mt-4">
+          {favoriteBooks.map((book) => (
+            <div key={book.id} className="col-md-3 mb-4">
+              <BookCard book={book} />
             </div>
           ))}
         </div>
@@ -27,5 +30,3 @@ function Favorites() {
     </div>
   );
 }
-
-export default Favorites;

@@ -1,12 +1,17 @@
 import React from "react";
+// Styling: Footer-specific CSS.
 import "../Assets/Footer.css";
+// QRCode: Generates a scannable QR code for the store URL.
 import { QRCodeCanvas } from "qrcode.react";
+// Icons: Social media icons from react-icons library.
 import { FaInstagram, FaFacebook, FaTwitter } from "react-icons/fa";
+
 
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-top">
+        {/* Social Media Links */}
         <div className="social-icons">
           <a href="https://instagram.com/yourstore" target="_blank" rel="noopener noreferrer">
             <FaInstagram />
