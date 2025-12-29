@@ -32,3 +32,4 @@ The website includes the following pages:
 ```bash
 git clone https://github.com/hadi-orabi1/hadi-project2.git
 cd hadi-project2
+
