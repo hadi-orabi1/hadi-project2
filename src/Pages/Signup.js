@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import "../Assets/Auth.css";
 
+const API = process.env.REACT_APP_API_URL || "http://localhost:5001";
 export default function Signup() {
     // State for user registration data
     const [formData, setFormData] = useState({
@@ -26,7 +27,7 @@ export default function Signup() {
 
         try {
             // Send registration data to backend API using axios
-            const response = await axios.post("http://localhost:5001/api/auth/register", formData);
+            const response = await axios.post(`${API}/api/auth/register`, formData);
 
             // Auto-login: Save token and user data to localStorage
             localStorage.setItem("token", response.data.token);

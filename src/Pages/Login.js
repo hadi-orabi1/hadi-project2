@@ -6,6 +6,7 @@ import axios from "axios";
 // Styling: Specific CSS for the authentication pages.
 import "../Assets/Auth.css";
 
+const API = process.env.REACT_APP_API_URL || "http://localhost:5001";
 export default function Login() {
     // State to hold email and password inputs
     const [formData, setFormData] = useState({
@@ -28,7 +29,7 @@ export default function Login() {
 
         try {
             // Using axios for login - cleaner syntax, no need for JSON.stringify
-            const response = await axios.post("http://localhost:5001/api/auth/login", formData);
+            const response = await axios.post(`${API}/api/auth/login`, formData);
 
             // Step 2: Persistence.
             // We save the token so the user stays logged in even if they close the tab.

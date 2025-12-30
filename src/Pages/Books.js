@@ -4,6 +4,9 @@ import axios from "axios";
 import BookCard from "../Components/BookCard";
 import "../Assets/Books.css";
 
+
+const API = process.env.REACT_APP_API_URL || "http://localhost:5001";
+
 const categoryIcons = {
   Programming: "💻",
   "Self-Help": "🧠",
@@ -30,7 +33,7 @@ export default function Books() {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        const { data } = await axios.get("http://localhost:5001/api/books");
+        const { data } = await axios.get(`${API}/api/books`);
         setBooks(data);
         setError(null);
       } catch (err) {
